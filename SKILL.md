@@ -51,9 +51,9 @@ bird search "(gem OR undervalued OR 100x) crypto" --min-likes 10 -n 15
 - Fear & Greed Index: [value] ([Extreme Fear/Fear/Neutral/Greed/Extreme Greed])
 
 ### 3. News of the Day
-- [Major Web3 announcement with source link]
-- [Regulation/news affecting market]
-- [Any market-moving world news]
+- [Major Web3 announcement](https://x.com/...) — Brief summary
+- [Regulation/news affecting market](https://x.com/...) — Brief summary
+- [Any market-moving world news](https://x.com/...) — Brief summary
 
 ### 4. Crypto Twitter (CT)
 - Main narrative: [What's the hot topic today?]
@@ -61,11 +61,11 @@ bird search "(gem OR undervalued OR 100x) crypto" --min-likes 10 -n 15
 - Notable accounts: [Who's driving conversation]
 
 ### 5. NFTs Market Update
-**ETH NFTs:** [2-3 sentence paragraph on top ETH NFTs market. Mention any floors moving, volume trends, notable sales. Skip if nothing significant.]
+**ETH Eco:** [2-3 sentence paragraph on top ETH ecosystem updates — NFTs, tokens, protocols. Mention @username for key accounts. Skip if nothing significant.]
 
-**Bitcoin Ordinals:** [2-3 sentence paragraph on top Bitcoin Ordinals market. Mention any collections trending, floor changes. Skip if nothing significant.]
+**Bitcoin Eco:** [2-3 sentence paragraph on top Bitcoin/Ordinals market. Mention @username for key accounts. Skip if nothing significant.]
 
-**Solana NFTs:** [2-3 sentence paragraph on top Solana NFTs market. Mention any movers, volume, hype. Skip if nothing significant.]
+**Sol Eco:** [2-3 sentence paragraph on top Solana ecosystem — NFTs, DeFi, memes. Mention @username for key accounts. Skip if nothing significant.]
 
 **Notable Mints:**
 - Minting Today: @[account1] @[account2] @[account3] (only good, hyped drops)
@@ -74,11 +74,11 @@ bird search "(gem OR undervalued OR 100x) crypto" --min-likes 10 -n 15
 If none worth mentioning, say "No major mints detected."
 
 ### 6. Alpha from Reputable Figures:
-Scan top Web3 accounts, KOLs, influencers, and traders. Extract actual alpha (calls, positions, mints) and skip the noise/irrelevant chatter.
-
-- Top calls: [What are they buying/minting?]
-- High-conviction signals: [Who's aping what with size/proof]
-- WL opportunities: [Any good drops they mentioned]
+- Top calls: [What are reputable accounts buying/minting? Include @username]
+- High-conviction signals: [Who's aping what with size/proof — include @username]
+- WL opportunities: [Any good drops they mentioned — include @username]
+- Emerging narratives: [New meta or trend being discussed — include @username]
+- Notable exits/warnings: [Who's selling or warning about what — include @username]
 
 ### 7. Extra / Warnings
 - [Any red flags or opportunities noticed]
