@@ -13,7 +13,6 @@ Turn your AI agent into an alpha-hunting machine. This skill enables agents to s
 
 - Agents that need daily market intelligence
 - Traders who want CT sentiment on specific plays
-- NFT hunters looking for mint announcements
 - Anyone wanting structured alpha without the noise
 
 ## Installation
