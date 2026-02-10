@@ -4,7 +4,7 @@
 
 ---
 
-# 🦅 Alpha Scout Report — Feb 10, 2026
+# 🦅 Alpha Report — Feb 10, 2026
 
 ### 1. Good Morning
 Rise and grind — market's showing some life after the blood bath. Let's see what's cooking.

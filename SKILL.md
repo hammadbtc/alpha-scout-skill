@@ -39,7 +39,7 @@ bird search "(gem OR undervalued OR 100x) crypto" --min-likes 10 -n 15
 **Generate report in this exact format:**
 
 ```markdown
-# 🦅 Alpha Scout Report — Feb 10, 2026
+# 🦅 Alpha Report — Feb 10, 2026
 
 ### 1. Good Morning
 [Simple greeting]
