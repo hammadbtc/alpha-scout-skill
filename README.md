@@ -15,10 +15,19 @@ Turn your AI agent into an alpha-hunting machine. This skill enables agents to s
 
 ## Installation
 
-1. **Install [bird](https://github.com/steipete/bird)** — X/Twitter CLI tool
+1. **Install bird** — X/Twitter CLI tool
+   ```bash
+   # Via Homebrew (macOS/Linux)
+   brew install steipete/tap/bird
+   
+   # Or download from releases (if brew doesn't work)
+   # https://github.com/steipete/bird/releases
+   ```
+   
 2. **Get X credentials:**
    - Auth token (`X_AUTH_TOKEN`)
    - CT0 cookie (`X_CT0`)
+   
 3. **Verify access:**
    ```bash
    bird whoami --auth-token "$X_AUTH_TOKEN" --ct0 "$X_CT0"
@@ -108,12 +117,12 @@ When you ask about a specific asset, you get:
 
 ## How It Works
 
-The skill uses [bird](https://github.com/steipete/bird) to search X without API keys. Your agent brings its own credentials, you bring the intelligence.
-
 **Stack:**
-- `bird` — X/Twitter CLI (no API costs)
+- `bird` — X/Twitter CLI (install separately, no API costs)
 - `x-alpha-scout` skill — The playbook for what to scan and how to format
 - Your agent's reasoning — Parses and structures the alpha
+
+Bird is NOT pre-installed with OpenClaw. Install it via brew or download from releases. Your agent brings its own X credentials, you bring the intelligence.
 
 No Twitter API costs. No rate limits. Just raw alpha.
 
