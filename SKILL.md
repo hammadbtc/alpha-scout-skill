@@ -116,8 +116,7 @@ bird search "$PEPEAI (gem OR scam OR rug OR buy)" -n 20
 ```
 📊 CT Sentiments:
 [4-5 line summary based on top 20-30 recent tweets about the asset. What are people saying? Any patterns? Hype or concern? Specific details about the project/token/NFT]
-
-📈 Overall: [Bullish/Bearish/Neutral]
+📈 Overall: [Bullish/Bearish/Neutral] (assessment at end of CT Sentiments section)
 
 🐋 Takes of High-Rep Accounts:
 [@Influencer1: "quote or summary of their take" — Bullish]
