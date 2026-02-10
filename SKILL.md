@@ -61,15 +61,15 @@ bird search "(gem OR undervalued OR 100x) crypto" --min-likes 10 -n 15
 - Notable accounts: [Who's driving conversation]
 
 ### 5. NFTs Market Update
-**ETH Eco:** [2-3 sentence paragraph on top ETH ecosystem updates — NFTs, tokens, protocols. Mention @username for key accounts. Skip if nothing significant.]
+**ETH Eco:** [2-3 sentence paragraph on top ETH ecosystem updates — NFTs, tokens, protocols. Skip if nothing significant.]
 
-**Bitcoin Eco:** [2-3 sentence paragraph on top Bitcoin/Ordinals market. Mention @username for key accounts. Skip if nothing significant.]
+**Bitcoin Eco:** [2-3 sentence paragraph on top Bitcoin/Ordinals market. Skip if nothing significant.]
 
-**Sol Eco:** [2-3 sentence paragraph on top Solana ecosystem — NFTs, DeFi, memes. Mention @username for key accounts. Skip if nothing significant.]
+**Sol Eco:** [2-3 sentence paragraph on top Solana ecosystem — NFTs, DeFi, memes. Skip if nothing significant.]
 
 **Notable Mints:**
-- Minting Today: @[account1] @[account2] @[account3] (only good, hyped drops)
-- Upcoming Mints: @[account4] @[account5] (worth keeping an eye on)
+- Minting Today: [@account1](https://x.com/account1) [@account2](https://x.com/account2) [@account3](https://x.com/account3) (only good, hyped drops — embed X profile links)
+- Upcoming Mints: [@account4](https://x.com/account4) [@account5](https://x.com/account5) (worth keeping an eye on — embed X profile links)
 
 If none worth mentioning, say "No major mints detected."
 
