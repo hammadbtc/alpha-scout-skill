@@ -67,7 +67,11 @@ bird search "(gem OR undervalued OR 100x) crypto" --min-likes 10 -n 15
 
 **Solana NFTs:** [2-3 sentence paragraph on top Solana NFTs market. Mention any movers, volume, hype. Skip if nothing significant.]
 
-**Today's Notable Mints:** [Only list good, hyped mints for today across ETH/BTC/SOL. Skip small/dead drops. If none worth mentioning, say "No major mints detected today."]
+**Today's Notable Mints:**
+- Minting Today: @[account1] @[account2] @[account3] (only good, hyped drops)
+- Upcoming Mints: @[account4] @[account5] (worth keeping an eye on)
+
+If none worth mentioning, say "No major mints detected."
 
 ### 6. Alpha from Scans
 - Top token calls: [From morning scan]
