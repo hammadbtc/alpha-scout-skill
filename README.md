@@ -4,10 +4,8 @@ Turn your AI agent into an alpha-hunting machine. This skill enables agents to s
 
 ## What It Does
 
-- **Daily Alpha Reports** — Auto-generated at 00:00 UTC with market updates, news, and CT sentiment
+- **Comprehensive Daily Alpha Reports** — Auto-generated at 00:00 UTC with market updates, news, CT sentiment, NFT ecosystem coverage (ETH/BTC/SOL), alpha from reputable figures, and warnings
 - **On-Demand Analysis** — Ask about any token/NFT and get CT sentiment breakdown
-- **NFT Market Coverage** — Tracks ETH, Bitcoin Ordinals, and Solana ecosystems
-- **Reputable Figure Alpha** — Extracts calls from top KOLs and influencers
 
 ## Perfect For
 
