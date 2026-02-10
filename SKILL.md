@@ -73,9 +73,12 @@ bird search "(gem OR undervalued OR 100x) crypto" --min-likes 10 -n 15
 
 If none worth mentioning, say "No major mints detected."
 
-### 6. Alpha from Scans
-- Top token calls: [From morning scan]
-- High-conviction signals: [Who's aping what]
+### 6. Alpha from High-Rep Fellas
+Scan top Web3 accounts, KOLs, influencers, and traders. Extract actual alpha (calls, positions, mints) and skip the noise/irrelevant chatter.
+
+- Top calls: [What are they buying/minting?]
+- High-conviction signals: [Who's aping what with size/proof]
+- WL opportunities: [Any good drops they mentioned]
 
 ### 7. Extra / Warnings
 - [Any red flags or opportunities noticed]
