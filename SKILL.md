@@ -1,6 +1,6 @@
 ---
 name: x-alpha-scout
-description: X/Twitter alpha scanner for crypto and NFTs. Use when: (1) user wants daily alpha reports, (2) analyzing a specific token/NFT/project from X sentiment. GitHub: github.com/hammad-btc/x-alpha-scout
+description: X/Twitter alpha scanner for crypto and NFTs. Use when: (1) user wants daily alpha reports, (2) analyzing a specific token/NFT/project from X sentiment. GitHub: github.com/hammad-btc/alpha-scout-skill
 ---
 
 # X Alpha Scout
@@ -30,33 +30,55 @@ bird whoami --auth-token "$X_AUTH_TOKEN" --ct0 "$X_CT0"
 
 ```bash
 # Scan for overnight alpha
-bird search "(buying OR bought OR aping OR loading up) (ticker OR token OR \$)" --since 24h -n 25
-bird search "(minting OR mint OR free mint) NFT" --since 24h -n 20
-bird search "(just launched OR stealth launch) token" --since 12h -n 15
-bird search "(gem OR undervalued OR 100x) crypto" --min-likes 10 --since 24h -n 15
+bird search "(buying OR bought OR aping OR loading up) (ticker OR token OR \$)" -n 25
+bird search "(minting OR mint OR free mint) NFT" -n 20
+bird search "(just launched OR stealth launch) token" -n 15
+bird search "(gem OR undervalued OR 100x) crypto" --min-likes 10 -n 15
 ```
 
-**Generate report:**
+**Generate report in this exact format:**
 
 ```markdown
-# 🦅 Alpha Scout Report — 2026-02-10
+# 🦅 Alpha Scout Report — Feb 10, 2026
 
-## 🔥 Top Calls (Last 24h)
-| Asset | Type | Key Callers | Conviction |
-|-------|------|-------------|------------|
-| $PEPEAI | token | @DegenKing, @AlphaKing | HIGH |
-| FomoBears | NFT | @NFTWhale | MEDIUM |
+### 1. Good Morning
+[Simple greeting]
 
-## 🆕 New Launches
-- $MOONSHOT — stealth launch, 50K MC
-- PixelPunks — free mint, 5K supply
+### 2. Crypto Market Update
+- BTC: $[price] ([+/-]% 24h)
+- ETH: $[price] ([+/-]% 24h)
+- SOL: $[price] ([+/-]% 24h)
+- Fear & Greed Index: [value] ([Extreme Fear/Fear/Neutral/Greed/Extreme Greed])
 
-## 📊 CT Sentiment Snapshot
-- Bullish tickers: $PEPEAI, $SOLANA, $BONK
-- Bearish warnings: $RUGCOIN (multiple red flags)
+### 3. News of the Day
+- [Major Web3 announcement with source link]
+- [Regulation/news affecting market]
+- [Any market-moving world news]
+
+### 4. Crypto Twitter (CT)
+- Main narrative: [What's the hot topic today?]
+- Key trends: [New meta, drama, or shifts]
+- Notable accounts: [Who's driving conversation]
+
+### 5. NFTs Market Update
+**ETH NFTs:** [2-3 sentence paragraph on top ETH NFTs market. Mention any floors moving, volume trends, notable sales. Skip if nothing significant.]
+
+**Bitcoin Ordinals:** [2-3 sentence paragraph on top Bitcoin Ordinals market. Mention any collections trending, floor changes. Skip if nothing significant.]
+
+**Solana NFTs:** [2-3 sentence paragraph on top Solana NFTs market. Mention any movers, volume, hype. Skip if nothing significant.]
+
+**Today's Notable Mints:** [Only list good, hyped mints for today across ETH/BTC/SOL. Skip small/dead drops. If none worth mentioning, say "No major mints detected today."]
+
+### 6. Alpha from Scans
+- Top token calls: [From morning scan]
+- High-conviction signals: [Who's aping what]
+
+### 7. Extra / Warnings
+- [Any red flags or opportunities noticed]
+- [Personal observations]
 
 ---
-*Next report: 00:00 UTC*
+*Report time: 00:00 UTC | NFA/DYOR*
 ```
 
 **Deliver:** Send to user via their preferred channel (Discord, Telegram, etc.)
@@ -71,8 +93,8 @@ bird search "(gem OR undervalued OR 100x) crypto" --min-likes 10 --since 24h -n 
 
 ```bash
 # Deep scan this specific asset
-bird search "$PEPEAI" --since 48h -n 30
-bird search "$PEPEAI (gem OR scam OR rug OR buy)" --since 48h -n 20
+bird search "$PEPEAI" -n 30
+bird search "$PEPEAI (gem OR scam OR rug OR buy)" -n 20
 ```
 
 **Analyze gathered tweets:**
@@ -93,7 +115,7 @@ bird search "$PEPEAI (gem OR scam OR rug OR buy)" --since 48h -n 20
 🐋 Takes of High-Rep Accounts:
 [@Influencer1: "quote or summary of their take" — Bullish]
 [@Influencer2: "quote or summary of their take" — Bearish]
-[Or: No noticeable activity detected from high-rep accounts — Neutral]
+[Or: No noticeable activity detected from high-rep accounts — Bearish]
 
 ⚠️ Red Flags:
 [Any contract issues, anon team, copycat name, LP not locked, etc. Or: None detected]
@@ -109,10 +131,10 @@ bird search "$PEPEAI (gem OR scam OR rug OR buy)" --since 48h -n 20
 
 ```bash
 # Get general sentiment tweets
-bird search "$TICKER" --since 48h -n 30
+bird search "$TICKER" -n 30
 
 # Get high-rep account takes specifically
-bird search "$TICKER (from:DegenKing OR from:AlphaKing OR from:CryptoGem)" --since 48h -n 20
+bird search "$TICKER (from:DegenKing OR from:AlphaKing OR from:CryptoGem)" -n 20
 # Add more KOLs as needed
 ```
 
@@ -145,9 +167,9 @@ bird search "$TICKER (from:DegenKing OR from:AlphaKing OR from:CryptoGem)" --sin
 | Task | Command |
 |------|---------|
 | Daily report | Run scans for last 24h, compile top calls |
-| Analyze asset | `bird search "$TICKER" --since 48h -n 30` |
-| Check specific caller | `bird search "from:username" --since 7d -n 20` |
-| Find mints | `bird search "free mint OR minting now NFT" --since 12h` |
+| Analyze asset | `bird search "$TICKER" -n 30` |
+| Check specific caller | `bird search "from:username" -n 20` |
+| Find mints | `bird search "free mint OR minting now NFT" -n 15` |
 
 ---
 
@@ -161,13 +183,13 @@ bird search "$TICKER (from:DegenKing OR from:AlphaKing OR from:CryptoGem)" --sin
 
 **User:** "What about $MOONSHOT?"
 
-**You:** Search "$MOONSHOT" (48h, 30 tweets) → analyze sentiment → check for red flags → deliver analysis with score + verdict + NFA
+**You:** Search "$MOONSHOT" (30 tweets) → analyze sentiment → check for red flags → deliver analysis with score + verdict + NFA
 
 ---
 
 **User:** "Is @DegenKing reliable?"
 
-**You:** Search "from:DegenKing" (7 days) → review their recent calls → give qualitative assessment: "Known for high-conviction calls, recent streak looks solid" or "Mixed bag lately, verify before following"
+**You:** Search "from:DegenKing" → review their recent calls → give qualitative assessment: "Known for high-conviction calls, recent streak looks solid" or "Mixed bag lately, verify before following"
 
 ---
 
