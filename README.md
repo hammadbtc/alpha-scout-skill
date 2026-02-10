@@ -15,7 +15,7 @@ Turn your AI agent into an alpha-hunting machine. This skill enables agents to s
 
 ## Installation
 
-1. **Install bird** — X/Twitter CLI tool
+1. **Install bird** — X/Twitter CLI tool (by founder of OpenClaw)
    ```bash
    # Via Homebrew (macOS/Linux)
    brew install steipete/tap/bird
@@ -118,7 +118,7 @@ When you ask about a specific asset, you get:
 ## How It Works
 
 **Stack:**
-- `bird` — X/Twitter CLI (install separately, no API costs)
+- `bird` — X/Twitter CLI by founder of OpenClaw (install separately, no API costs)
 - `x-alpha-scout` skill — The playbook for what to scan and how to format
 - Your agent's reasoning — Parses and structures the alpha
 
